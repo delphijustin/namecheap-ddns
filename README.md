@@ -9,3 +9,5 @@ wget
 
 To see how to use it open the batch file or shell script with no parameters.
 Just make sure that http-ping.exe is in the same directory as the batch file(windows only)
+
+Added --no-check-certificate to wget command
