@@ -13,11 +13,11 @@ exit 1
 fi
 if [ -n "$4" ]; then
 echo Setting $2 on $1 to $4
-wget -O /dev/null "https://dynamicdns.park-your-domain.com/update?host=$2&domain=$1&password=$3&ip=$4"
+wget -O /dev/null "https://dynamicdns.park-your-domain.com/update?host=$2&domain=$1&password=$3&ip=$4" --no-check-certificate
 exit 0
 fi
 while true
 do
-wget -O /dev/null "https://dynamicdns.park-your-domain.com/update?host=$2&domain=$1&password=$3"
+wget -O /dev/null "https://dynamicdns.park-your-domain.com/update?host=$2&domain=$1&password=$3" --no-check-certificate
 sleep 30
 done
